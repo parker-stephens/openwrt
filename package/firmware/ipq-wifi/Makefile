@@ -54,6 +54,7 @@ ALLWIFIBOARDS:= \
 	qxwlan_e2600ac-c1 \
 	qxwlan_e2600ac-c2 \
 	teltonika_rutx \
+	tp-link_deco_m5_eu_v3.0 \
 	zte_mf286d
 
 ALLWIFIPACKAGES:=$(foreach BOARD,$(ALLWIFIBOARDS),ipq-wifi-$(BOARD))
@@ -144,6 +145,7 @@ $(eval $(call generate-ipq-wifi-package,plasmacloud_pa2200,Plasma Cloud PA2200))
 $(eval $(call generate-ipq-wifi-package,qxwlan_e2600ac-c1,Qxwlan E2600AC C1))
 $(eval $(call generate-ipq-wifi-package,qxwlan_e2600ac-c2,Qxwlan E2600AC C2))
 $(eval $(call generate-ipq-wifi-package,teltonika_rutx,Teltonika RUTX))
+$(eval $(call generate-ipq-wifi-package,tp-link_deco_m5_eu_v3.0,TP-Link Deco M5 EU v3.0))
 $(eval $(call generate-ipq-wifi-package,zte_mf286d,ZTE MF286D))
 
 $(foreach PACKAGE,$(ALLWIFIPACKAGES),$(eval $(call BuildPackage,$(PACKAGE))))
