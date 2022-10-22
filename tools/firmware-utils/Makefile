@@ -10,10 +10,10 @@ PKG_NAME:=firmware-utils
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL=$(PROJECT_GIT)/project/firmware-utils.git
-PKG_SOURCE_DATE:=2022-04-25
-PKG_SOURCE_VERSION:=ddc3e00e314d3fbc3f9faab2d07395722ce9b01a
-PKG_MIRROR_HASH:=246fc1d72d3a8cdb4072d81e033c92abaf614acd6f35a10fffd029d5c7f9303b
+PKG_SOURCE_URL=https://github.com/TomerCo/firmware-utils.git
+PKG_SOURCE_DATE:=2022-10-22
+PKG_SOURCE_VERSION:=92b26cc7d3e27ea5d99d9207544e83f7d67d29b5
+PKG_MIRROR_HASH:=skip
 
 include $(INCLUDE_DIR)/host-build.mk
 include $(INCLUDE_DIR)/cmake.mk
