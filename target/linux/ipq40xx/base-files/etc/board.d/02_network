@@ -147,7 +147,6 @@ ipq40xx_setup_interfaces()
 		;;
         tp-link,deco-m5-eu-v3.0)
 		ucidef_set_interfaces_lan_wan "eth0" "eth1"
-		ucidef_add_switch "switch0" "5:lan" "4:wan" "0@eth0"
 		;;
 	zte,mf286d)
 		ucidef_set_interfaces_lan_wan "eth0" "eth1"
